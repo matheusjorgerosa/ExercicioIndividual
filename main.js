@@ -10,11 +10,11 @@ const config = {
         arcade: {
             enableBody: true,
             gravity: { y: 500 },
-            debug: true
+            debug: false
         }
     },
     scene: [
-        menuPrincipal, cenaPrincipal
+        menuPrincipal, comoJogar, cenaPrincipal, gameOver
     ],
 };
 
