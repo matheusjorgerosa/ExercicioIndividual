@@ -13,6 +13,7 @@ const config = {
             debug: false
         }
     },
+    // Define as cenas do jogo em ordem
     scene: [
         menuPrincipal, comoJogar, cenaPrincipal, gameOver
     ],

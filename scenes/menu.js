@@ -8,12 +8,14 @@ class menuPrincipal extends Phaser.Scene {
     }
 
     preload(){
+        // Carrega a imagem de fundo do menu e botões
         this.load.image("fundo_menu", "assets/fundo_menu.png");
         this.load.image("botao_jogar", "assets/botao_jogar.png");
         this.load.image("botao_tutorial", "assets/botao_tutorial.png");
     }
 
     create(){
+        // Adiciona as imagens e lógica de click no botão jogar e como jogar
         this.add.image(larguraJogo/2, alturaJogo/2, "fundo_menu");
         this.botao = this.add.image(larguraJogo/2, 430, "botao_jogar").setScale(0.38).setInteractive();
         this.botao_tutorial = this.add.image(larguraJogo/2, 570, "botao_tutorial").setScale(0.38).setInteractive();
